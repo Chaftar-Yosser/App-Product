@@ -16,7 +16,7 @@ function Products() {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, [products]);
+  }, [dispatch]);
 
   return (
     <Container className="py-5">

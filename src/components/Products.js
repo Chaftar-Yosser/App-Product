@@ -16,12 +16,12 @@ function Products() {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, [0]);
+  }, []);
 
   return (
     <Container className="py-5">
       <Row className="py-5">
-        {products.map((product) => (
+        {products.map((product) => (  
           <Col key={product.id}>
             <Card style={{ width: "18rem" }}>
               <Card.Img  style={{ height: "300px" }} variant="top" src={product.image} />
